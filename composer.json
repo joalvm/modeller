@@ -1,0 +1,17 @@
+{
+    "name": "joalv/modeller",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandro Vilchez",
+            "email": "joalvm@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Joalvm\\Modeller\\": "src/"
+        }
+    }
+}
