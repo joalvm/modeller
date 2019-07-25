@@ -1,6 +1,7 @@
 {
     "name": "joalvm/modeller",
-    "type": "library",
+    "description": "Commando para generar class models",
+    "type": "package",
     "license": "MIT",
     "authors": [
         {
@@ -8,10 +9,20 @@
             "email": "joalvm@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "doctrine/dbal": "^2.10@dev"
+    },
     "autoload": {
         "psr-4": {
             "Joalvm\\Modeller\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Joalvm\\Modeller\\ModellerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
 }
