@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-        "doctrine/dbal": "^2.10@dev"
+        "doctrine/dbal": "^2.9",
+        "illuminate/console": "^5.8"
     },
     "autoload": {
         "psr-4": {
@@ -24,5 +25,5 @@
             ]
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
