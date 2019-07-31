@@ -3,10 +3,7 @@
 namespace Joalvm\Modeller;
 
 use Illuminate\Console\Command;
-use Doctrine\DBAL\DriverManager;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Schema;
 
 class ModellerCommand extends Command
 {
@@ -26,8 +23,6 @@ class ModellerCommand extends Command
 
     /**
      * Create a new command instance.
-     *
-     * @return void
      */
     public function __construct()
     {
@@ -45,7 +40,6 @@ class ModellerCommand extends Command
         $platform = $conn->getDatabasePlatform();
         dd($platform->getListTableConstraintsSQL('files'));
         $platform->registerDoctrineTypeMapping('enum', 'string');
-
 
         // $fks = $dsm->listTableDetails('files');
         // dd($fks);
