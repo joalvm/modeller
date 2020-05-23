@@ -1,7 +1,8 @@
 <?php
 
-namespace Joalvm\Modeller;
+namespace Modeller;
 
+use Modeller\ModellerCommand;
 use Illuminate\Support\ServiceProvider;
 
 class ModellerServiceProvider extends ServiceProvider
@@ -17,9 +18,7 @@ class ModellerServiceProvider extends ServiceProvider
     public function register()
     {
         if ($this->app->runningInConsole()) {
-            $this->commands([
-                ModellerCommand::class,
-            ]);
+            $this->commands([ModellerCommand::class]);
         }
     }
 }

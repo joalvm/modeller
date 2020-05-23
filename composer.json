@@ -10,18 +10,20 @@
         }
     ],
     "require": {
-        "doctrine/dbal": "^2.9",
-        "illuminate/console": "^5.8"
+        "doctrine/dbal": "^2.9"
+    },
+    "require-dev": {
+        "laravel/framework": "^6.4"
     },
     "autoload": {
         "psr-4": {
-            "Joalvm\\Modeller\\": "src/"
+            "Modeller\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Joalvm\\Modeller\\ModellerServiceProvider"
+                "Modeller\\ModellerServiceProvider"
             ]
         }
     },
